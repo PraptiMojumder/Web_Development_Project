@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 19, 2025 at 08:06 PM
+-- Generation Time: Jan 24, 2025 at 12:31 PM
 -- Server version: 10.4.32-MariaDB
--- PHP Version: 8.0.30
+-- PHP Version: 8.2.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -44,6 +44,14 @@ CREATE TABLE `sign_up` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
+-- Dumping data for table `sign_up`
+--
+
+INSERT INTO `sign_up` (`Serial_id`, `first_name`, `last_name`, `email`, `password`, `work_as`, `role`, `score`, `department`, `institution`, `job_title`, `contact`, `profile_picture`) VALUES
+(1, 'Prapti', 'Mojumder', 'pmojumder@gmail', '$2y$10$R4A', 'Developer', '', 0, '', '', '', '', ''),
+(2, 'sadman', 'sakib', 'ssakib@gmail.com', '1234', 'Developer', '', 0, '', '', '', '', '');
+
+--
 -- Indexes for dumped tables
 --
 
@@ -61,7 +69,7 @@ ALTER TABLE `sign_up`
 -- AUTO_INCREMENT for table `sign_up`
 --
 ALTER TABLE `sign_up`
-  MODIFY `Serial_id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `Serial_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
